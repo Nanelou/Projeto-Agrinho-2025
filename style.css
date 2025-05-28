@@ -20,7 +20,7 @@ header {
 
 header img {
   max-width: 300px;
-  width: 40%;  /* menor que 60% */
+  width: 30%;  /* menor que 60% */
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
