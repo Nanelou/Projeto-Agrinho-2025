@@ -1,6 +1,6 @@
 :root {
   --cor-primaria: #065209;
-  --cor-secundaria: #677a67;
+  --cor-secundaria: #f1f1f1;
   --fonte-principal: 'Arial', sans-serif;
 }
 
@@ -14,7 +14,7 @@ body {
 header {
   background-color: var(--cor-primaria);
   color: white;
-  padding: 1rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
@@ -28,22 +28,26 @@ header img {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 2rem;
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Galeria (à esquerda) */
 .galeria {
   flex: 1;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  min-width: 300px;
+}
+
+.galeria h2 {
+  margin-bottom: 1rem;
 }
 
 .foto {
   width: 100%;
-  max-width: 280px;
+  max-width: 100%;
   margin-bottom: 1rem;
   border-radius: 8px;
 }
@@ -52,16 +56,21 @@ main {
 .biografia {
   flex: 2;
   min-width: 300px;
-  text-align: right;
+  text-align: left;
 }
 
 h2 {
   color: var(--cor-primaria);
 }
 
+/* Contato */
 .contato {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+.contato h2 {
+  text-align: center;
 }
 
 form {
@@ -105,12 +114,13 @@ footer {
   main {
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
   }
 
   .galeria,
   .biografia {
+    width: 100%;
     text-align: center;
-    align-items: center;
   }
 
   .biografia {
