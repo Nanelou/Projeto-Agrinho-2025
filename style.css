@@ -1,7 +1,7 @@
 :root {
-  --cor-primaria: #2e4beb;        /* Azul principal (header, botões) */
-  --cor-secundaria: #7a8ae9;      /* Azul claro (background) */
-  --cor-texto: #ffffff;           /* Texto branco */
+  --cor-primaria: #05156c;        /* Azul principal (header, botões) */
+  --cor-secundaria: #f0f1f7;      /* Azul claro (background) */
+  --cor-texto: #f2f8f7;           /* Texto branco */
   --cor-texto-escuro: #121212;    /* Texto escuro (para fundos claros) */
   --cor-hover: #1c349d;           /* Hover mais escuro */
   --cor-fundo: #e6e9f8;           /* Fundo geral */
