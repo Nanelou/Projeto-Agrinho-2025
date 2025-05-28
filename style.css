@@ -1,6 +1,6 @@
 :root {
   --cor-primaria: #03011f;
-  --cor-secundaria: #7388ed;
+  --cor-secundaria: #cbd1ee;
   --fonte-principal: 'Arial', sans-serif;
 }
 
@@ -99,7 +99,7 @@ button {
 }
 
 button:hover {
-  background-color: #050f5d;
+  background-color: #bbbfdd;
 }
 
 footer {
