@@ -1,5 +1,5 @@
 :root {
-  --cor-primaria: #3e3d4e;
+  --cor-primaria: #0a0460;
   --cor-secundaria: #e1e4f4;
   --fonte-principal: 'Arial', sans-serif;
 }
@@ -13,7 +13,7 @@ body {
 
 header {
   background-color: var(--cor-primaria);
-  color: white;
+  color: rgb(15, 7, 7);
   padding: 2rem 1rem;
   text-align: center;
 }
