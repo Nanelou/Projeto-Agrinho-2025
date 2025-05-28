@@ -1,35 +1,40 @@
 :root {
-  --cor-primaria: #020a0f;
-  --cor-secundaria: #7a8ae9;
+  --cor-primaria: #2e4beb;        /* Azul principal (header, botões) */
+  --cor-secundaria: #7a8ae9;      /* Azul claro (background) */
+  --cor-texto: #ffffff;           /* Texto branco */
+  --cor-texto-escuro: #121212;    /* Texto escuro (para fundos claros) */
+  --cor-hover: #1c349d;           /* Hover mais escuro */
+  --cor-fundo: #e6e9f8;           /* Fundo geral */
+  --cor-footer: #020a0f;          /* Fundo do rodapé */
   --fonte-principal: 'Arial', sans-serif;
 }
 
 body {
   font-family: var(--fonte-principal);
   margin: 0;
-  background-color: var(--cor-secundaria);
-  color: #121212;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto-escuro);
 }
 
 header {
-  background-color: #2e4beb;
-  color: rgb(8, 9, 10);
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto);
   padding: 2rem 1rem;
   text-align: center;
 }
+
 header p {
-  font-size: 1.5rem; /* exemplo: aumenta o tamanho da fonte */
-  line-height: 1.5;  /* para melhor leitura */
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 header img {
   max-width: 300px;
-  width: 30%;  /* menor que 60% */
+  width: 30%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
-
 
 main {
   display: flex;
@@ -41,7 +46,7 @@ main {
   margin: 0 auto;
 }
 
-/* Galeria (à esquerda) */
+/* Galeria */
 .galeria {
   flex: 1;
   min-width: 300px;
@@ -58,7 +63,7 @@ main {
   border-radius: 8px;
 }
 
-/* Biografia (à direita) */
+/* Biografia */
 .biografia {
   flex: 2;
   min-width: 300px;
@@ -94,9 +99,16 @@ textarea {
   border-radius: 4px;
 }
 
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid var(--cor-secundaria);
+  outline-offset: 2px;
+}
+
 button {
   background-color: var(--cor-primaria);
-  color: white;
+  color: var(--cor-texto);
   border: none;
   padding: 0.75rem;
   border-radius: 4px;
@@ -105,17 +117,18 @@ button {
 }
 
 button:hover {
-  background-color: #bbbfdd;
+  background-color: var(--cor-hover);
 }
 
 footer {
-  background-color: #eee;
+  background-color: var(--cor-footer);
+  color: var(--cor-texto);
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
 
-/* Responsividade para dispositivos móveis */
+/* Responsividade */
 @media (max-width: 768px) {
   main {
     flex-direction: column;
