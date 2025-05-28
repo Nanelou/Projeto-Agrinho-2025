@@ -1,27 +1,46 @@
+:root {
+  --cor-primaria: #2e7d32;
+  --cor-secundaria: #c8e6c9;
+  --fonte-principal: 'Arial', sans-serif;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  margin: 0;
+  background-color: var(--cor-secundaria);
+  color: #333;
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
 main {
-  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 2rem;
 }
 
-/* Coluna da galeria (fotos à esquerda) */
+/* Galeria (à esquerda) */
 .galeria {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-/* Coluna da biografia (texto à direita) */
-.biografia {
-  flex: 2;
-  min-width: 300px;
-  text-align: right;
-}
-
-/* Imagens da galeria */
 .foto {
   width: 100%;
   max-width: 280px;
@@ -29,15 +48,72 @@ main {
   border-radius: 8px;
 }
 
-/* Ajustes para telas pequenas */
+/* Biografia (à direita) */
+.biografia {
+  flex: 2;
+  min-width: 300px;
+  text-align: right;
+}
+
+h2 {
+  color: var(--cor-primaria);
+}
+
+.contato {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
   main {
     flex-direction: column;
     align-items: center;
   }
 
-  .biografia, .galeria {
+  .galeria,
+  .biografia {
     text-align: center;
     align-items: center;
+  }
+
+  .biografia {
+    text-align: left;
   }
 }
