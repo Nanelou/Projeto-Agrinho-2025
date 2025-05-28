@@ -1,5 +1,5 @@
 :root {
-  --cor-primaria: #3e32ef;
+  --cor-primaria: #34a0df;
   --cor-secundaria: #b9c1ed;
   --fonte-principal: 'Arial', sans-serif;
 }
@@ -8,7 +8,7 @@ body {
   font-family: var(--fonte-principal);
   margin: 0;
   background-color: var(--cor-secundaria);
-  color: #333;
+  color: #121212;
 }
 
 header {
