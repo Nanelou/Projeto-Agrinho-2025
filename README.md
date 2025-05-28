@@ -42,8 +42,7 @@ As fotos retratam momentos do cotidiano de Aylton na lavoura e durante suas colh
 
 O site foi publicado via **GitHub Pages** e pode ser acessado pelo link abaixo:
 
-🔗 [Acesse o site aqui](https://seunome.github.io/do-campo-a-cidade)  
-> *Substitua o link pelo seu endereço real após a publicação*
+🔗 https://github.com/Nanelou/Projeto-Agrinho-2025.git
 
 ---
 
