@@ -1,4 +1,4 @@
-#  Do Campo à Cidade
+# Agrinho -  Do Campo à Cidade
 
 Este projeto foi desenvolvido como parte do **Projeto Agrinho 2025**, no itinerário formativo de **Matemática e Ciências da Natureza**, com foco em **Programação Front-End (HTML e CSS)**.  
 A proposta é valorizar e representar, por meio de uma página web, a conexão entre o campo e a cidade, destacando histórias de vida, produção rural e identidade local.
